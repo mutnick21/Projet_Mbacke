@@ -1,0 +1,110 @@
+.exam-submission {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .exam-info {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .exam-info h2 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .exam-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    color: #666;
+  }
+  
+  .exam-details p {
+    margin: 0;
+  }
+  
+  .submission-section {
+    margin: 2rem 0;
+  }
+  
+  .submission-section h3 {
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .submission-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .submission-guidelines {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .submission-guidelines h4 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .submission-guidelines ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .submission-guidelines li {
+    color: #666;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .submission-guidelines li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2196f3;
+  }
+  
+  .exam-submission.success {
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  
+  .exam-submission.success h3 {
+    color: #4caf50;
+    margin-bottom: 1rem;
+  }
+  
+  .exam-submission.success p {
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .exam-submission {
+      padding: 1rem;
+    }
+  
+    .exam-details {
+      grid-template-columns: 1fr;
+    }
+  
+    .submission-actions {
+      flex-direction: column;
+    }
+  
+    .submission-actions button {
+      width: 100%;
+    }
+  } 

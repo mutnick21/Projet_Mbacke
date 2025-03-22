@@ -1,0 +1,117 @@
+.dashboard-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    min-height: 100vh;
+    background-color: #a8a3a3;
+}
+
+.welcome-paper {
+    padding: 2rem;
+    background: linear-gradient(135deg, #e0d7d7 0%, #0f1010 100%) !important;
+    color: rgb(7, 7, 7) !important;
+    margin-bottom: 2rem;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.welcome-paper h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.section-paper {
+    padding: 1.5rem;
+    border-radius: 10px !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
+    margin-bottom: 2rem;
+}
+
+.section-paper h5 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.data-grid {
+    border: none !important;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.data-grid .MuiDataGrid-columnHeaders {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.data-grid .MuiDataGrid-cell {
+    border-bottom: 1px solid #f1f3f5;
+}
+
+.data-grid .MuiDataGrid-row:hover {
+    background-color: #f8f9fa;
+}
+
+/* Style pour les boutons d'action */
+.MuiButton-root {
+    text-transform: none !important;
+    border-radius: 6px !important;
+}
+
+.MuiButton-root:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les puces de statut */
+.MuiChip-root {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+/* Animation de chargement */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dashboard-container {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .dashboard-container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .welcome-paper {
+        padding: 1.5rem;
+        color: red !important; 
+    }
+
+    .welcome-paper h1 {
+        font-size: 1.5rem;
+    }
+
+    .section-paper {
+        padding: 1rem;
+        color:rgb(75, 71, 71) !important;
+    }
+
+    .MuiButton-root {
+        padding: 6px 12px !important;
+        font-size: 0.8125rem !important;
+    }
+}
+
+/* Style pour le loader */
+.MuiCircularProgress-root {
+    color: #3498db !important;
+}

@@ -1,0 +1,88 @@
+.numerique-display {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.constraints {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.constraints h4 {
+  margin: 0 0 0.5rem 0;
+  color: #495057;
+}
+
+.constraints ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #6c757d;
+}
+
+.input-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.numeric-input {
+  flex: 1;
+}
+
+.numeric-input input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.numeric-input input:focus {
+  outline: none;
+  border-color: #4dabf7;
+  box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.1);
+}
+
+.unit-input {
+  width: 120px;
+}
+
+.unit-input input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.unit-input input:focus {
+  outline: none;
+  border-color: #4dabf7;
+  box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.1);
+}
+
+.validation-message {
+  margin-top: 0.5rem;
+}
+
+.success-message {
+  color: #2b8a3e;
+  font-size: 0.9rem;
+}
+
+.warning-message {
+  color: #e67700;
+  font-size: 0.9rem;
+}
+
+.error-message {
+  color: #e03131;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+} 

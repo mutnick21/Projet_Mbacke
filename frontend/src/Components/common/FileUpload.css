@@ -1,0 +1,90 @@
+.file-upload-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .file-upload-area {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+  }
+  
+  .file-upload-area:hover,
+  .file-upload-area.drag-over {
+    border-color: #2196f3;
+    background-color: #e3f2fd;
+  }
+  
+  .upload-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: #666;
+  }
+  
+  .upload-message i {
+    font-size: 2.5rem;
+    color: #2196f3;
+  }
+  
+  .upload-message p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .upload-hint {
+    font-size: 0.875rem;
+    color: #888;
+  }
+  
+  .selected-file {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 6px;
+  }
+  
+  .file-name {
+    font-size: 0.9rem;
+    color: #333;
+    flex: 1;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .error-message {
+    color: #f44336;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .file-upload-area {
+      padding: 1rem;
+    }
+  
+    .upload-message i {
+      font-size: 2rem;
+    }
+  
+    .upload-message p {
+      font-size: 0.9rem;
+    }
+  
+    .selected-file {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
